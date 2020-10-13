@@ -11,22 +11,43 @@
 	border-top:none; 
 	border-left: none; 
 	border-right: none;
+	padding-bottom:3%;
 	}
+	
+	
+	form{
+			-webkit-box-shadow: 10px 15px 50px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 15px 50px 0px rgba(0,0,0,0.75);
+			box-shadow: 10px 15px 50px 0px rgba(0,0,0,0.75);
+
+	}
+	
 	</style>
 </head>
 
 
-<body style="background-color:gray;">
+<body style="background-color:#f5f5f5;">
 		<div style="display:flex; align-items:center; justify-content:center; width:100vw; height:90vh; " >
-			<form style="background-color:white; text-align:center; padding:5%; border-radius:10px;">
+			<form style="background-color:white; text-align:center; padding:2%; padding-left:6%; padding-right:6%; border-radius:10px;">
 			<!-- style="background-color:white; width:25%; text-align:center; padding-bottom:10%;"> -->
 			<table>
-				<h3>Sign In</h3>
-				<input class="style_add" type="text" id="login_user_id" name="usrnm" placeholder="UserName" ><br>
+				<h3 style="margin-bottom:2em;">Sign In</h3>
+				<input class="style_add" type="text" id="login_user_id" name="usrnm" placeholder="UserName"><br>
 				<input class="style_add" type="password" id="login_pass_id" name="passw" placeholder="Password" ><br><br>
-				<input type="submit" value="Sign In" style="background-color:blue; color:white; margin:5%; border-radius: 25px; width:100%; padding:3%;">
+				<input id ="not_sus" type="button" value="Sign In" style="background-color:#1c91a3; color:white; margin:5%; 
+				border-radius: 25px; width:100%; padding:3%; border:none; padding-top:1em; padding-bottom:1em;" 
+				onclick ="do_something_suspicious()">
+				<!-- <img id = "suspicious" src ="https://i.gifer.com/origin/d7/d7ac4f38b77abe73165d85edf2cbdb9e_w200.gif" style="display:none;"> -->
 			</table>
 			</form>
 		</div>
+		
+		<script>
+		function do_something_suspicious()
+			{	
+					//document.getElementById("not_sus").display = "none";
+					//document.getElementById("suspicious").display = "visible";
+			}
+		</script>
 </body>
 </html> 
